@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>An encyclopedia</title>
+    </head>
+    <body>
+        You can read this!
+        <svg><!-- Vectors -->
+            <circle cx="50" cy="50" r="50" fill="red"></circle>
+        </svg>
+        <canvas id="canv">
+            <!-- pixels -->
+
+        </canvas>
+        <script>
+            let a = 10
+            let canvas = document.querySelector("#canv")
+            let ctx = canvas.getContext("2d")
+
+            ctx.beginPath();
+            ctx.fillStyle = "green"
+            ctx.arc(50, 50, 50, 0, Math.PI*2)
+            ctx.fill()
+
+            
+        </script>
+    </body>
+</html>
